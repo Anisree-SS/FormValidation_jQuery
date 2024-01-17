@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>formValidation</title>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="script/script.js"></script>
+      <link rel="stylesheet" href="./style/style.css">
+   </head>
+   <body>
+      <div class="center">
+         <form name="registration" method="get" onsubmit="validation(event)">
+            <div class="centerTop">
+               <h3>REGISTRATION FORM</h3>
+            </div>
+            <div class="centerBody">
+               <div class="dataField">
+                  <div class="labelStyle">
+                     <p>First name </p>
+                  </div>
+                  <div class="inputStyle">
+                     <input type="text" id="fName" oninput="names(this)">
+                  </div>
+                  <div class="errorStyle">
+                     <p id="fNameValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="dataField">
+                  <div class="labelStyle">
+                     <p>Last name </p>
+                  </div>
+                  <div class="inputStyle">
+                     <input type="text" id="lName" oninput="names(this)">
+                  </div>
+                  <div class="errorStyle">
+                     <p id="lNameValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="dataField">
+                  <div class="labelStyle">
+                     <p>Address </p>
+                  </div>
+                  <div class="inputStyle">
+                     <textarea id="add"></textarea>
+                  </div>
+                  <div class="errorStyle">
+                     <p id="addValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="dataField">
+                  <div class="labelStyle">
+                     <p>Phone number </p>
+                  </div>
+                  <div class="inputStyle">
+                     <input type="text" id="phone" maxlength="10" oninput="phoneNo(this)">
+                  </div>
+                  <div class="errorStyle">
+                     <p id="phoneValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="dataField">
+                  <div class="labelStyle">
+                     <p>Email Id </p>
+                  </div>
+                  <div class="inputStyle">
+                     <input type="text" id="email">
+                  </div>
+                  <div class="errorStyle">
+                     <p id="emailValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="dataField">
+                  <div class="labelStyle">
+                     <p>Set password </p>
+                  </div>
+                  <div class="inputStyle">
+                     <input type="text" id="demoPass" oninput="confirmPassword()">
+                  </div>
+                  <div class="errorStyle">
+                     <p id="demoPassValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="dataField">
+                  <div class="labelStyle">
+                     <p>Confirm password </p>
+                  </div>
+                  <div class="inputStyle">
+                     <input type="password" id="conPass" oninput="password()">
+                  </div>
+                  <div class="errorStyle">
+                     <p id="conPassValid" class="error"></p>
+                  </div>
+               </div>
+            </div>
+            <div class="centerBottom">
+               <input type="submit" value="Submit">
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
