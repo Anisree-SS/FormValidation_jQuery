@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	margin=0;
+	padding=0;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	border: 1px solid #000000;
+	margin-left: 25%;
+	background-color: mintcream;
+}
+
+
+.centerBody {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 10px 10px 85px;
+}
+
+.dataField{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.centerTop {
+	display: flex;
+	justify-content: center;
+}
+
+.labelStyle{
+	width: 35%;
+}
+
+.centerBottom {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 4%;
+	padding: 0px 10px 10px 85px;
+}
+
+.error {
+	color: red;
+	font-size: 13px;
+
+}
